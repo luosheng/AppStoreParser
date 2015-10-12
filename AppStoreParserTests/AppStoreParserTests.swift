@@ -21,9 +21,19 @@ class AppStoreParserTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testFetchAndParse() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let expectation = self.expectationWithDescription("App info is being fetched.")
+        parseAppInfoForIdentifier("333206289") { (info, error) -> () in
+            expectation.fulfill()
+            if let info = info {
+                XCTAssert(info.title != nil)
+                XCTAssert(info.title!.containsString("支付宝"))
+                XCTAssertEqual(info.iPhoneScreenshots.count, 4)
+            }
+        }
+        self.waitForExpectationsWithTimeout(10, handler: nil)
     }
     
     func testPerformanceExample() {

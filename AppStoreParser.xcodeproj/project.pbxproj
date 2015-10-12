@@ -10,6 +10,7 @@
 		B34DA4221BCB3FD70020395F /* AppStoreParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B34DA4211BCB3FD70020395F /* AppStoreParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B34DA4291BCB3FD70020395F /* AppStoreParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34DA41E1BCB3FD70020395F /* AppStoreParser.framework */; settings = {ASSET_TAGS = (); }; };
 		B34DA42E1BCB3FD70020395F /* AppStoreParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DA42D1BCB3FD70020395F /* AppStoreParserTests.swift */; };
+		B34DA4391BCB41160020395F /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DA4381BCB41160020395F /* AppInfo.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		B34DA4281BCB3FD70020395F /* AppStoreParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppStoreParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B34DA42D1BCB3FD70020395F /* AppStoreParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreParserTests.swift; sourceTree = "<group>"; };
 		B34DA42F1BCB3FD70020395F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B34DA4381BCB41160020395F /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				B34DA4211BCB3FD70020395F /* AppStoreParser.h */,
+				B34DA4381BCB41160020395F /* AppInfo.swift */,
 				B34DA4231BCB3FD70020395F /* Info.plist */,
 			);
 			path = AppStoreParser;
@@ -142,6 +145,7 @@
 		B34DA4151BCB3FD70020395F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Pop Tap";
 				TargetAttributes = {
@@ -193,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B34DA4391BCB41160020395F /* AppInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +312,7 @@
 		B34DA4331BCB3FD70020395F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -317,12 +323,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pop-tap.AppStoreParser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		B34DA4341BCB3FD70020395F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

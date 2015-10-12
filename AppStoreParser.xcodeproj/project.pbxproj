@@ -13,6 +13,7 @@
 		B34DA4391BCB41160020395F /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DA4381BCB41160020395F /* AppInfo.swift */; settings = {ASSET_TAGS = (); }; };
 		B34DA43E1BCB417A0020395F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34DA43C1BCB417A0020395F /* Alamofire.framework */; };
 		B34DA43F1BCB417A0020395F /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34DA43D1BCB417A0020395F /* Kanna.framework */; };
+		B34DA4421BCB41E40020395F /* AppStoreParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DA4411BCB41E40020395F /* AppStoreParser.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		B34DA4381BCB41160020395F /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		B34DA43C1BCB417A0020395F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		B34DA43D1BCB417A0020395F /* Kanna.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kanna.framework; path = Carthage/Build/iOS/Kanna.framework; sourceTree = "<group>"; };
+		B34DA4411BCB41E40020395F /* AppStoreParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				B34DA4211BCB3FD70020395F /* AppStoreParser.h */,
 				B34DA4381BCB41160020395F /* AppInfo.swift */,
+				B34DA4411BCB41E40020395F /* AppStoreParser.swift */,
 				B34DA4231BCB3FD70020395F /* Info.plist */,
 			);
 			path = AppStoreParser;
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B34DA4421BCB41E40020395F /* AppStoreParser.swift in Sources */,
 				B34DA4391BCB41160020395F /* AppInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

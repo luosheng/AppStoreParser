@@ -9,11 +9,11 @@
 import Foundation
 
 public struct AppInfo {
-    let title: String?
-    let descriptionHTMLString: String?
-    let category: String?
-    let iconURLString: String?
-    let iPhoneScreenshots: [String?]
-    let iPadScreenshots: [String?]
-    let watchScreenshots: [String?]
+    public let title: String?
+    public let descriptionHTMLString: String?
+    public let category: String?
+    public let iconURLString: String?
+    public let iPhoneScreenshots: [String?]
+    public let iPadScreenshots: [String?]
+    public let watchScreenshots: [String?]
 }
